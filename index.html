@@ -1,1 +1,74 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=tea.png><title>软件技术基础课设</title><link href=/css/app.964e3a4c.css rel=preload as=style><link href=/css/chunk-vendors.5ad50e34.css rel=preload as=style><link href=/js/app.1443d6a7.js rel=preload as=script><link href=/js/chunk-vendors.fe7c7dec.js rel=preload as=script><link href=/css/chunk-vendors.5ad50e34.css rel=stylesheet><link href=/css/app.964e3a4c.css rel=stylesheet></head><body><noscript><strong>We're sorry but hello-world doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.fe7c7dec.js></script><script src=/js/app.1443d6a7.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body style="margin: 0;">
+	<div class="top"><img src="4.png" alt="" style="width: 100%;"></div>
+    <div class="toubu" style="height: 70px;">
+        <p style="color: #026d00;font-size: 20px;font-weight: bold ;margin-left:10px;margin-top:60px ">
+            本科用户，入校授权有效！
+        </p>
+    </div>
+    <div class="container" style="border-top:solid;border-color:#ececec;border-width:thin">
+        <div class="h1" style="display: 
+		flex;height: 50px">
+            <img src="1.png" alt="" style="width: 30px;
+    height: 30px;margin-top:11px;margin-left: 8px;">
+            <p class="title" style="color: #626262">用户姓名</p>
+            <p class="neirong" style="position: absolute;right: 10px;font-weight: bold ;font-size:22px;line-height: 5px">杨雨茜</p>
+        </div>
+        <div class="h2" style="display: 
+		flex;height: 50px">
+            <img src="2.png" alt="" style="width: 30px;
+    height: 25px;margin-top:11px;margin-left: 10px">
+            <p class="title" style="color: #626262">登记类型</p>
+            <p class="neirong" style="position: absolute;right: 10px;font-weight: bold ;font-size:22px;line-height: 5px">本科生</p>
+        </div>
+        <div class="h3" style="display: 
+		flex">
+            <img src="3.png" alt="" style="width: 30px;
+    height: 30px;margin-top:11px;margin-left: 10px;">
+            <p class="title" style="color: #626262">登记时间</p>
+            <marquee behavior="scroll" direction="right" style="width: 150px;
+    position: absolute;line-height: 50px;
+    right: 10px;"><span id="time" style="font-weight: bolder;color:#4cb99f;">Welcom CSDN!</span></marquee>
+            <!-- <div style="width: 100px"><p id="time" style="font-weight:bold;color:#4cb99f;position: absolute;right: 10px">2020-11</p></div>
+             -->
+        </div>
+    </div>
+    <button  style="background-color: #58c1a6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    position: absolute;
+    left: 100px;
+    border-radius: 5px;">前往个人二维码</button>
+    
+
+
+</body>
+<script>
+	var obj=new Date();
+	var hour=obj.getHours();
+	var minute=obj.getMinutes();
+	minute=minute>9?minute:"0"+minute;
+	var second=obj.getSeconds();
+	second=second>9?second:"0"+second;
+	var y=obj.getFullYear();
+	var m=obj.getMonth()+1;
+	var d=obj.getDate();
+
+	document.getElementById("time").innerHTML=y+"-"+m+"-"+d+"  "+hour+":"+minute+":"+second
+	//document.write(hour+"h"+minute+"m"+second+"s");
+</script>
+</html>
